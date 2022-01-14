@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "favourites",
   "info": {
-    "name": "favourite"
+    "name": "favourite",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -19,6 +20,29 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "favourites"
+    },
+    "image": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "species": {
+      "type": "string",
+      "required": true
+    },
+    "episode": {
+      "type": "string"
     }
   }
 }
